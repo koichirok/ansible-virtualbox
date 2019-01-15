@@ -7,8 +7,8 @@ virtualbox_dep_pkgs:
   - libgomp
   - glibc-headers
   - glibc-devel
-  - kernel-headers
-  - kernel-devel
+  - kernel-headers-{{ ansible_kernel }}
+  - kernel-devel-{{ ansible_kernel }}
   - dkms
 
 virtualbox_pkg_mgr: rpm
